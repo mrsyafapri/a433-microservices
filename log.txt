@@ -1,0 +1,7 @@
+time="2024-07-11T18:51:49+07:00" level=warning msg="C:\\Dev\\devops-projects\\a433-microservices\\docker-compose.yml: `version` is obsolete"
+ Container a433-microservices-item-db-1  Created
+ Container a433-microservices-item-app-1  Created
+ Container a433-microservices-item-db-1  Starting
+ Container a433-microservices-item-db-1  Started
+ Container a433-microservices-item-app-1  Starting
+ Container a433-microservices-item-app-1  Started
