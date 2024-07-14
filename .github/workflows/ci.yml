@@ -12,7 +12,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Install hadolint
-        run: sudo apt-get install -y hadolint
+        run: |
+          sudo apt-get install shellcheck -y
+          wget https://github.com/hadolint/hadolint/releases/download/v2.12.0/hadolint-Linux-x86_64
+          sudo mv hadolint-Linux-x86_64 /usr/local/bin/hadolint
+          sudo chmod +x /usr/local/bin/hadolint
       - name: Lint Dockerfile
         run: hadolint Dockerfile
 
